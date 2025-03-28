@@ -1,4 +1,4 @@
-import { pgTable, text, serial, timestamp } from "drizzle-orm/pg-core";
+import { pgTable, text, serial, timestamp, boolean } from "drizzle-orm/pg-core";
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
@@ -7,6 +7,8 @@ export const waitlistEntries = pgTable("waitlist_entries", {
   name: text("name").notNull(),
   email: text("email").notNull().unique(),
   comments: text("comments"),
+  confirmationToken: text("confirmation_token"),
+  isConfirmed: boolean("is_confirmed").default(false),
   createdAt: timestamp("created_at").defaultNow(),
 });
 

@@ -22,7 +22,7 @@ const Footer = () => {
               <span className="text-xl font-bold gradient-text">Bubble Invest</span>
             </div>
             <p className="text-slate-400 mb-6 max-w-md">
-              Modern, accessible, and long-term oriented investing with AI-powered ETF portfolios designed for everyone.
+              Modern, accessible, and long-term oriented investing with transparent strategies that focus on what you can control, not on false market predictions.
             </p>
             <div className="flex gap-4">
               {[
@@ -57,9 +57,9 @@ const Footer = () => {
           <div className="md:col-span-2">
             <h3 className="font-semibold text-lg mb-4 text-white">Learn</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-slate-400 hover:text-primary transition-colors">ETF Basics</a></li>
-              <li><a href="#" className="text-slate-400 hover:text-primary transition-colors">Investment Guide</a></li>
-              <li><a href="#" className="text-slate-400 hover:text-primary transition-colors">Market Research</a></li>
+              <li><a href="#" className="text-slate-400 hover:text-primary transition-colors">Investment Fundamentals</a></li>
+              <li><a href="#" className="text-slate-400 hover:text-primary transition-colors">Common Investment Myths</a></li>
+              <li><a href="#" className="text-slate-400 hover:text-primary transition-colors">Behavior & Finance</a></li>
               <li><a href="#" className="text-slate-400 hover:text-primary transition-colors">Financial Terms</a></li>
             </ul>
           </div>
@@ -87,7 +87,7 @@ const Footer = () => {
         
         <div className="tech-card p-6 mb-12">
           <p className="text-slate-400 text-sm">
-            <strong className="text-white">Investor Notice:</strong> Investing involves risk, including the possible loss of principal. ETFs are subject to market fluctuation and the risks of their underlying investments. ETFs are subject to management fees and other expenses. Past performance is not a guarantee of future results. This information is provided for educational purposes only and is not intended to provide investment advice or recommendations. Please consult with a qualified financial professional before making investment decisions.
+            <strong className="text-white">Our Investment Philosophy:</strong> We believe in transparency and honesty. Investing inherently involves risk, and no one can truly predict market movements. Unlike traditional approaches that claim to "beat the market," we focus on education, long-term thinking, and building a community that understands that past performance doesn't guarantee future results. We don't make false promises - instead, we provide the tools and knowledge to help you make informed decisions in an uncertain financial world.
           </p>
         </div>
 

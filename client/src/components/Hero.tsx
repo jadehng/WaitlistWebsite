@@ -47,7 +47,7 @@ const Hero = () => {
             <div className="mt-12 grid grid-cols-2 gap-4">
               {[
                 { icon: <Clock className="h-5 w-5" />, text: "Long-term value creation" },
-                { icon: <ShieldCheck className="h-5 w-5" />, text: "Ethical investing principles" },
+                { icon: <ShieldCheck className="h-5 w-5" />, text: "No false market predictions" },
                 { icon: <Users className="h-5 w-5" />, text: "Community-powered" },
                 { icon: <Library className="h-5 w-5" />, text: "Financial education" }
               ].map((item, index) => (
@@ -90,7 +90,7 @@ const Hero = () => {
                       </div>
                       <div>
                         <h4 className="font-medium mb-1">Problem</h4>
-                        <p className="text-sm text-slate-400">Too many people are excluded from building long-term wealth due to complexity, high fees, and short-term incentives in finance.</p>
+                        <p className="text-sm text-slate-400">The financial industry profits from false predictions, complex products, high fees, and convincing people they need "experts" who claim to predict unpredictable markets.</p>
                       </div>
                     </div>
                   </div>
@@ -102,7 +102,7 @@ const Hero = () => {
                       </div>
                       <div>
                         <h4 className="font-medium mb-1">Solution</h4>
-                        <p className="text-sm text-slate-400">A transparent, subscription-based investment platform that emphasizes education, community, and ethical long-term investing principles.</p>
+                        <p className="text-sm text-slate-400">A transparent, subscription-based platform that's honest about market uncertainty, emphasizes education, community, and focuses on the factors you can actually control.</p>
                       </div>
                     </div>
                   </div>

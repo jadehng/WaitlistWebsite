@@ -25,7 +25,7 @@ const features = [
   {
     icon: <Users className="w-10 h-10" />,
     title: "Community-Driven",
-    description: "Join a community of like-minded investors who believe in fair, accessible finance. Share knowledge, learn together, and grow collectively."
+    description: "Join a community of like-minded individuals who believe in fair, accessible finance. Share knowledge, learn together, and grow collectively."
   },
   {
     icon: <LibraryBig className="w-10 h-10" />,
@@ -33,9 +33,9 @@ const features = [
     description: "We prioritize helping you understand how finance works. Educational resources, interactive tools, and clear explanations accompany every feature."
   },
   {
-    icon: <Scale className="w-10 h-10" />,
-    title: "Fair Wealth Distribution",
-    description: "We reject the winner-takes-all mentality of traditional finance. Our model ensures that as we grow, benefits are shared widely among our community."
+    icon: <Handshake className="w-10 h-10" />,
+    title: "No False Promises",
+    description: "Unlike traditional financial services that claim to predict markets, we acknowledge that no one can truly forecast financial futures. We focus on what's controllable instead."
   },
   {
     icon: <CircleDollarSign className="w-10 h-10" />,

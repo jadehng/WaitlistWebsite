@@ -116,10 +116,10 @@ const HowItWorks = () => {
                     <div className="p-4 rounded-lg bg-slate-800/50 border border-slate-700/50">
                       <h4 className="font-medium mb-2 flex items-center gap-2">
                         <span className="text-red-400 text-xl">✗</span>
-                        Short-term Thinking
+                        False Market Predictions
                       </h4>
                       <p className="text-sm text-slate-400">
-                        Most financial products encourage short-term trading and market timing, which hurt long-term returns and increase anxiety.
+                        Traditional finance professionals claim they can predict market movements and "beat the market," despite overwhelming evidence that this is impossible.
                       </p>
                     </div>
                     
@@ -136,10 +136,10 @@ const HowItWorks = () => {
                     <div className="p-4 rounded-lg bg-slate-800/50 border border-slate-700/50">
                       <h4 className="font-medium mb-2 flex items-center gap-2">
                         <span className="text-red-400 text-xl">✗</span>
-                        Lack of Education
+                        Lack of Transparency
                       </h4>
                       <p className="text-sm text-slate-400">
-                        The industry benefits from keeping consumers confused and dependent on "experts" rather than empowering them with knowledge.
+                        The industry benefits from keeping consumers confused and dependent on "experts" rather than acknowledging the limitations of financial forecasting.
                       </p>
                     </div>
                   </div>
@@ -152,7 +152,7 @@ const HowItWorks = () => {
                       <div>
                         <h4 className="font-medium mb-1">Our Solution</h4>
                         <p className="text-sm text-slate-400 mb-4">
-                          A subscription-based investment platform with transparent pricing, educational resources, and a community of like-minded investors focused on long-term wealth creation.
+                          A subscription-based platform that's honest about market unpredictability, with transparent pricing, educational resources, and a community focused on what truly matters for long-term success.
                         </p>
                         <Button onClick={() => scrollToSection('waitlist')} className="w-full">
                           Join Us in Fixing Finance
