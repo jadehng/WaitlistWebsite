@@ -3,32 +3,39 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import HowItWorks from "@/components/HowItWorks";
-import Testimonials from "@/components/Testimonials";
 import WaitlistForm from "@/components/WaitlistForm";
 import Footer from "@/components/Footer";
 
 export default function Home() {
   useEffect(() => {
     // Implementing smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const href = this.getAttribute('href');
-        if (href === '#') return;
-        
-        const target = document.querySelector(href as string);
-        if (target) {
-          window.scrollTo({
-            top: (target as HTMLElement).offsetTop - 80,
-            behavior: 'smooth'
-          });
-        }
-      });
+    const anchorElements = document.querySelectorAll('a[href^="#"]');
+    
+    const handleClick = (e: MouseEvent) => {
+      e.preventDefault();
+      const element = e.currentTarget as HTMLAnchorElement;
+      const href = element.getAttribute('href');
+      
+      if (href === '#' || !href) return;
+      
+      const targetElement = document.querySelector(href);
+      if (targetElement) {
+        window.scrollTo({
+          top: (targetElement as HTMLElement).offsetTop - 80,
+          behavior: 'smooth'
+        });
+      }
+    };
+    
+    // Add event listeners
+    anchorElements.forEach(anchor => {
+      anchor.addEventListener('click', handleClick as EventListener);
     });
     
+    // Cleanup function
     return () => {
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.removeEventListener('click', () => {});
+      anchorElements.forEach(anchor => {
+        anchor.removeEventListener('click', handleClick as EventListener);
       });
     };
   }, []);
@@ -40,7 +47,6 @@ export default function Home() {
         <Hero />
         <Features />
         <HowItWorks />
-        <Testimonials />
         <WaitlistForm />
       </main>
       <Footer />

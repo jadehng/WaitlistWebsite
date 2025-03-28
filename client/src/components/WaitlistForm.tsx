@@ -6,7 +6,15 @@ import type { InsertWaitlistEntry } from "@shared/schema";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
 import { motion, AnimatePresence } from "framer-motion";
-import { Loader2, RocketIcon, CircleDollarSign, LockIcon, CreditCard, ArrowRight } from "lucide-react";
+import { 
+  Loader2, 
+  Users, 
+  BookOpen, 
+  ShieldCheck, 
+  Lightbulb, 
+  ArrowRight,
+  CircleDollarSign
+} from "lucide-react";
 import { CheckCircle2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -21,6 +29,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
+import { Textarea } from "@/components/ui/textarea";
 import {
   Dialog,
   DialogContent,
@@ -38,6 +47,7 @@ const WaitlistForm = () => {
     defaultValues: {
       name: "",
       email: "",
+      comments: "",
     },
   });
 
@@ -63,21 +73,26 @@ const WaitlistForm = () => {
     submitWaitlistMutation.mutate(data);
   };
 
-  const perks = [
+  const communityValues = [
     {
-      icon: <RocketIcon className="w-5 h-5" />,
-      title: "Early Access",
-      description: "Be first to experience our innovative ETF portfolios"
+      icon: <Lightbulb className="w-5 h-5" />,
+      title: "Shared Vision",
+      description: "Join a community that believes in ethical, transparent, and accessible finance"
     },
     {
-      icon: <CircleDollarSign className="w-5 h-5" />,
-      title: "Reduced Fees",
-      description: "Lifetime fee discount for founding members"
+      icon: <Users className="w-5 h-5" />,
+      title: "Collective Wisdom",
+      description: "Benefit from community knowledge sharing and group financial education"
     },
     {
-      icon: <LockIcon className="w-5 h-5" />,
-      title: "Priority Support",
-      description: "Direct access to our financial advisors"
+      icon: <BookOpen className="w-5 h-5" />,
+      title: "Educational Focus",
+      description: "Access resources to understand investing fundamentals before making decisions"
+    },
+    {
+      icon: <ShieldCheck className="w-5 h-5" />,
+      title: "Value Alignment",
+      description: "Be part of a movement that values long-term growth over short-term gains"
     }
   ];
 
@@ -93,66 +108,51 @@ const WaitlistForm = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <div className="inline-flex items-center justify-center px-4 py-1 mb-4 text-xs font-medium text-primary border border-primary/30 rounded-full bg-primary/10">
-            Limited Spots Available
+            Building a Community
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">Join Bubble Invest <span className="gradient-text">Waitlist</span></h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">Join Our <span className="gradient-text">Movement</span></h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-            Be among the first to experience our revolutionary approach to ETF investing. Early members receive exclusive benefits and priority access.
+            We're creating a community of people who believe finance should work differently. This isn't just a product - it's a vision for how we can make finance more ethical, transparent, and accessible for everyone.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <div className="space-y-8">
-              <div className="tech-card p-6 border-primary/20">
-                <div className="flex items-center gap-4 mb-4">
-                  <CreditCard className="w-8 h-8 text-primary" />
+              <div className="tech-card p-8 border-primary/20">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="p-2 bg-primary/10 rounded-lg border border-primary/20">
+                    <CircleDollarSign className="h-8 w-8 text-primary" />
+                  </div>
                   <div>
-                    <h3 className="text-xl font-bold">No Credit Card Required</h3>
-                    <p className="text-slate-400 text-sm">Just sign up to secure your spot</p>
+                    <h3 className="text-xl font-bold">Our Community Values</h3>
+                    <p className="text-slate-400">What makes us different</p>
                   </div>
                 </div>
                 
-                <ul className="space-y-4">
-                  {perks.map((perk, index) => (
+                <ul className="space-y-4 mt-6">
+                  {communityValues.map((value, index) => (
                     <li key={index} className="flex gap-3">
                       <div className="flex-shrink-0 h-6 w-6 rounded-full bg-primary/20 flex items-center justify-center text-primary">
-                        {perk.icon}
+                        {value.icon}
                       </div>
                       <div>
-                        <p className="font-medium text-white">{perk.title}</p>
-                        <p className="text-slate-400 text-sm">{perk.description}</p>
+                        <p className="font-medium text-white">{value.title}</p>
+                        <p className="text-slate-400 text-sm">{value.description}</p>
                       </div>
                     </li>
                   ))}
                 </ul>
-              </div>
-              
-              <div>
-                <div className="flex items-center gap-2 mb-2">
-                  <div className="flex -space-x-2">
-                    {[
-                      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop",
-                      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop",
-                      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
-                    ].map((src, i) => (
-                      <div key={i} className="w-8 h-8 rounded-full overflow-hidden border-2 border-slate-900">
-                        <img src={src} alt="User avatar" className="w-full h-full object-cover" />
-                      </div>
-                    ))}
-                    <div className="w-8 h-8 rounded-full bg-primary/20 border-2 border-slate-900 flex items-center justify-center text-primary text-xs">
-                      +86
-                    </div>
-                  </div>
-                  <p className="text-slate-400 text-sm">
-                    <span className="text-white font-medium">89 people</span> joined in the last 24 hours
-                  </p>
-                </div>
                 
-                <div className="mt-4 h-2 w-full bg-slate-800 rounded-full overflow-hidden">
-                  <div className="h-full bg-gradient-to-r from-primary to-blue-500 w-[78%]"></div>
+                <div className="mt-8 p-4 bg-slate-800/50 rounded-lg border border-slate-700/50">
+                  <p className="text-sm text-slate-300 italic">
+                    "We're not just building another financial app. We're creating a movement that puts education first, transparency at the center, and long-term value creation as the goal."
+                  </p>
+                  <div className="mt-3 flex items-center gap-2">
+                    <div className="w-6 h-6 rounded-full bg-primary/30"></div>
+                    <p className="text-xs text-slate-400">Founder, Bubble Invest</p>
+                  </div>
                 </div>
-                <p className="text-slate-400 text-xs mt-2">Waitlist is 78% full - secure your spot now</p>
               </div>
             </div>
           </div>
@@ -166,7 +166,8 @@ const WaitlistForm = () => {
           >
             <div className="absolute -inset-1 bg-gradient-to-r from-primary/50 to-blue-600/50 rounded-xl blur-xl opacity-20"></div>
             <div className="tech-card p-8 relative">
-              <h3 className="text-2xl font-bold mb-6">Reserve Your Spot</h3>
+              <h3 className="text-2xl font-bold mb-2">Join the Movement</h3>
+              <p className="text-slate-400 mb-6">Be part of a community reshaping finance for the 21st century</p>
               
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -207,11 +208,29 @@ const WaitlistForm = () => {
                     )}
                   />
                   
+                  <FormField
+                    control={form.control}
+                    name="comments"
+                    render={({ field }) => (
+                      <FormItem className="space-y-2">
+                        <FormLabel className="text-slate-300">What interests you most about our vision? (Optional)</FormLabel>
+                        <FormControl>
+                          <Textarea 
+                            placeholder="Share what resonates with you about our approach to finance..."
+                            className="bg-slate-800 border-slate-700 text-white h-24"
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  
                   <div>
                     <div className="flex items-start gap-2">
                       <Checkbox id="terms" required className="data-[state=checked]:bg-primary" />
                       <label htmlFor="terms" className="text-sm text-slate-400">
-                        I agree to receive updates about Bubble Invest and understand that I can unsubscribe at any time.
+                        I'd like to be part of this community and receive updates. I understand I can unsubscribe anytime.
                       </label>
                     </div>
                   </div>
@@ -228,7 +247,7 @@ const WaitlistForm = () => {
                       </>
                     ) : (
                       <span className="flex items-center">
-                        Join the Waitlist
+                        Join Our Community
                         <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                       </span>
                     )}
@@ -247,14 +266,14 @@ const WaitlistForm = () => {
                   <div className="mx-auto w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mb-4 glow-effect">
                     <CheckCircle2 className="w-10 h-10 text-primary" />
                   </div>
-                  <DialogTitle className="text-center text-2xl font-bold">You're on the list!</DialogTitle>
+                  <DialogTitle className="text-center text-2xl font-bold">Welcome to Our Community!</DialogTitle>
                   <DialogDescription className="text-center text-slate-400">
-                    Thanks for joining our waitlist. We'll notify you as soon as Bubble Invest is ready for you to start your investment journey.
+                    Thank you for joining us on this journey to reshape finance. We're excited to build something meaningful together and will keep you updated on our progress.
                   </DialogDescription>
                 </DialogHeader>
                 <div className="bg-slate-800/50 p-4 rounded-lg mt-4">
                   <p className="text-center text-slate-300 text-sm">
-                    <span className="font-medium">Pro tip:</span> Share with friends to move up the waitlist. We'll be inviting users in order of signup date.
+                    <span className="font-medium">Help us grow:</span> Share our vision with like-minded friends who might be interested in joining our community of financial changemakers.
                   </p>
                 </div>
                 <div className="flex justify-center mt-4">

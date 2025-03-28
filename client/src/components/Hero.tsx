@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { fadeIn, slideUp } from "@/lib/animations";
-import { TrendingUp, LineChart, Coins, BarChart3 } from "lucide-react";
+import { TrendingUp, ShieldCheck, CircleDollarSign, Users, Clock, Library } from "lucide-react";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -26,30 +26,30 @@ const Hero = () => {
             variants={fadeIn}
           >
             <div className="inline-block px-3 py-1 mb-6 text-xs font-medium text-primary border border-primary/30 rounded-full bg-primary/10">
-              Smart investing for everyone
+              Finance reimagined for everyone
             </div>
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-              Your future, <br/>
-              <span className="gradient-text">financially secured</span>
+              Making finance <br/>
+              <span className="gradient-text">honest & accessible</span>
             </h1>
             <p className="text-lg text-slate-400 mb-8 max-w-lg">
-              Bubble Invest makes long-term investing simple, accessible, and modern with our AI-powered robo advisor and carefully selected ETF portfolios.
+              Join a community that believes investing should be long-term oriented, transparent, and accessible to all. We're building a subscription-based solution that puts your financial future first.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" onClick={() => scrollToSection('waitlist')} className="glow-effect">
-                Join the Waitlist
+                Join Our Community
               </Button>
               <Button size="lg" variant="outline" onClick={() => scrollToSection('how-it-works')} className="border-slate-700 hover:bg-slate-800">
-                How It Works
+                Learn Our Vision
               </Button>
             </div>
             
             <div className="mt-12 grid grid-cols-2 gap-4">
               {[
-                { icon: <TrendingUp className="h-5 w-5" />, text: "Long-term oriented" },
-                { icon: <LineChart className="h-5 w-5" />, text: "Data-driven decisions" },
-                { icon: <Coins className="h-5 w-5" />, text: "Low-cost ETFs" },
-                { icon: <BarChart3 className="h-5 w-5" />, text: "Smart rebalancing" }
+                { icon: <Clock className="h-5 w-5" />, text: "Long-term value creation" },
+                { icon: <ShieldCheck className="h-5 w-5" />, text: "Ethical investing principles" },
+                { icon: <Users className="h-5 w-5" />, text: "Community-powered" },
+                { icon: <Library className="h-5 w-5" />, text: "Financial education" }
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-2 text-slate-300">
                   <div className="flex items-center justify-center bg-primary/20 rounded-full w-8 h-8 text-primary">
@@ -69,55 +69,50 @@ const Hero = () => {
           >
             <div className="relative">
               <div className="absolute -inset-0.5 bg-gradient-to-r from-primary/50 to-blue-600/50 rounded-xl blur-xl opacity-20"></div>
-              <div className="tech-card p-6 relative">
-                <div className="absolute right-6 top-6">
-                  <div className="p-2 bg-green-500/10 rounded-lg border border-green-500/20">
-                    <TrendingUp className="h-6 w-6 text-green-500" />
-                  </div>
-                </div>
-                <div className="mb-8">
-                  <h3 className="text-xl font-bold mb-2">Portfolio Performance</h3>
-                  <p className="text-slate-400 text-sm">ETF-based investment growth over time</p>
-                </div>
-                
-                <div className="mb-4 space-y-2">
-                  <div className="flex justify-between items-center">
-                    <span className="text-slate-300">Tech ETFs</span>
-                    <span className="text-green-500">+18.4%</span>
-                  </div>
-                  <div className="w-full bg-slate-800 h-2 rounded-full">
-                    <div className="bg-gradient-to-r from-primary to-blue-500 h-2 rounded-full" style={{ width: '78%' }}></div>
-                  </div>
-                </div>
-                
-                <div className="mb-4 space-y-2">
-                  <div className="flex justify-between items-center">
-                    <span className="text-slate-300">Sustainable Energy</span>
-                    <span className="text-green-500">+12.3%</span>
-                  </div>
-                  <div className="w-full bg-slate-800 h-2 rounded-full">
-                    <div className="bg-gradient-to-r from-primary to-blue-500 h-2 rounded-full" style={{ width: '65%' }}></div>
-                  </div>
-                </div>
-                
-                <div className="mb-4 space-y-2">
-                  <div className="flex justify-between items-center">
-                    <span className="text-slate-300">Global Markets</span>
-                    <span className="text-green-500">+9.7%</span>
-                  </div>
-                  <div className="w-full bg-slate-800 h-2 rounded-full">
-                    <div className="bg-gradient-to-r from-primary to-blue-500 h-2 rounded-full" style={{ width: '54%' }}></div>
-                  </div>
-                </div>
-                
-                <div className="mt-8 pt-6 border-t border-slate-800">
-                  <div className="flex justify-between items-center">
-                    <div>
-                      <p className="text-sm text-slate-400">Portfolio Total</p>
-                      <p className="text-2xl font-bold gradient-text">+14.2%</p>
+              <div className="tech-card p-8 relative">
+                <div className="mb-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="p-2 bg-primary/10 rounded-lg border border-primary/20">
+                      <CircleDollarSign className="h-6 w-6 text-primary" />
                     </div>
-                    <Button variant="outline" className="border-slate-700 hover:bg-slate-800">
-                      View Details
+                    <h3 className="text-xl font-bold">Our Mission</h3>
+                  </div>
+                  <p className="text-slate-300 leading-relaxed">
+                    We believe that the current financial system is broken. It's designed to benefit institutions, not individuals.
+                  </p>
+                </div>
+                
+                <div className="space-y-4">
+                  <div className="p-4 rounded-lg bg-slate-800/50 border border-slate-700/50">
+                    <div className="flex items-start gap-3">
+                      <div className="bg-blue-500/20 p-2 rounded-full">
+                        <TrendingUp className="h-5 w-5 text-blue-400" />
+                      </div>
+                      <div>
+                        <h4 className="font-medium mb-1">Problem</h4>
+                        <p className="text-sm text-slate-400">Too many people are excluded from building long-term wealth due to complexity, high fees, and short-term incentives in finance.</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="p-4 rounded-lg bg-slate-800/50 border border-slate-700/50">
+                    <div className="flex items-start gap-3">
+                      <div className="bg-green-500/20 p-2 rounded-full">
+                        <ShieldCheck className="h-5 w-5 text-green-400" />
+                      </div>
+                      <div>
+                        <h4 className="font-medium mb-1">Solution</h4>
+                        <p className="text-sm text-slate-400">A transparent, subscription-based investment platform that emphasizes education, community, and ethical long-term investing principles.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="mt-6 pt-6 border-t border-slate-800">
+                  <div className="flex flex-col">
+                    <p className="text-sm text-slate-400 mb-2">Join us to help reshape finance for the 21st century</p>
+                    <Button onClick={() => scrollToSection('waitlist')} variant="default" className="w-full">
+                      Be Part of the Change
                     </Button>
                   </div>
                 </div>

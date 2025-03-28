@@ -6,14 +6,17 @@ export const waitlistEntries = pgTable("waitlist_entries", {
   id: serial("id").primaryKey(),
   name: text("name").notNull(),
   email: text("email").notNull().unique(),
+  comments: text("comments"),
   createdAt: timestamp("created_at").defaultNow(),
 });
 
 export const insertWaitlistEntrySchema = createInsertSchema(waitlistEntries).pick({
   name: true,
   email: true,
+  comments: true,
 }).extend({
-  email: z.string().email("Please enter a valid email address")
+  email: z.string().email("Please enter a valid email address"),
+  comments: z.string().optional()
 });
 
 export type InsertWaitlistEntry = z.infer<typeof insertWaitlistEntrySchema>;
