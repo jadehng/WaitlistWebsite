@@ -1,9 +1,9 @@
 
 {
-  "variant": "vibrant",
-  "primary": "hsl(205, 95%, 50%)",
+  "variant": "professional",
+  "primary": "hsl(208, 85%, 40%)",
   "appearance": "dark",
-  "radius": 0.5,
-  "background": "#000000",
+  "radius": 0.4,
+  "background": "#0c1117",
   "foreground": "#ffffff"
 }

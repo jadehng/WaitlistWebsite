@@ -11,10 +11,10 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
-        background: "#000000",
+        background: "#0c1117",
         foreground: "#ffffff",
         card: {
-          DEFAULT: "#0f0f0f",
+          DEFAULT: "#141c24",
           foreground: "#ffffff",
         },
         popover: {
