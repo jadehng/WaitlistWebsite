@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { CircleDollarSign, Menu, X } from "lucide-react";
+import { Codepen, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -25,12 +25,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <a href="#" className="flex items-center gap-2 z-10">
           <div className="relative">
-            <CircleDollarSign className="w-8 h-8 text-primary bubble-animation" />
+            <Codepen className="w-8 h-8 text-primary bubble-animation" />
             <div className="absolute -inset-1 rounded-full bg-primary/20 -z-10 blur-sm glow-effect"></div>
           </div>
           <span className="text-xl font-bold gradient-text">Bubble Invest</span>
         </a>
-        
+
         <div className="hidden md:flex gap-8 items-center">
           {navLinks.map((link) => (
             <a 
@@ -43,7 +43,7 @@ const Navbar = () => {
             </a>
           ))}
         </div>
-        
+
         <div className="flex items-center gap-4">
           <Button 
             onClick={scrollToWaitlist}
@@ -51,7 +51,7 @@ const Navbar = () => {
           >
             Join Waitlist
           </Button>
-          
+
           <button 
             className="md:hidden text-slate-300 focus:outline-none" 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -60,7 +60,7 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-      
+
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div 
