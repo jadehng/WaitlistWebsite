@@ -13,8 +13,12 @@
   }
 
   .dark {
-    background-color: #09090b;
-    color: #fafafa;
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  .dark button.secondary {
+    @apply bg-black text-white border border-white/20 hover:bg-gray-800 transition-colors;
   }
   
   .gradient-text {
