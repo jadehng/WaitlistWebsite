@@ -1,4 +1,4 @@
-import { CircleDollarSign } from "lucide-react";
+import { Network } from "lucide-react";
 import { FaTwitter, FaLinkedinIn, FaInstagram, FaDiscord, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
@@ -16,8 +16,9 @@ const Footer = () => {
           <div className="md:col-span-4">
             <div className="flex items-center gap-2 mb-6">
               <div className="relative">
-                <CircleDollarSign className="w-8 h-8 text-primary" />
-                <div className="absolute -inset-1 rounded-full bg-primary/20 -z-10 blur-sm"></div>
+                <Network className="w-8 h-8 text-primary rotate-45" />
+                <div className="absolute -inset-2 rounded-full bg-primary/20 -z-10 blur-md glow-effect animate-pulse"></div>
+                <div className="absolute -inset-1 rounded-full bg-primary/30 -z-10 blur-sm"></div>
               </div>
               <span className="text-xl font-bold gradient-text">Bubble Invest</span>
             </div>
