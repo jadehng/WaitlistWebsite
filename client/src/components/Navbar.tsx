@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Codepen, Menu, X } from "lucide-react";
+import { Network, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -25,8 +25,9 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <a href="#" className="flex items-center gap-2 z-10">
           <div className="relative">
-            <Codepen className="w-8 h-8 text-primary bubble-animation" />
-            <div className="absolute -inset-1 rounded-full bg-primary/20 -z-10 blur-sm glow-effect"></div>
+            <Network className="w-8 h-8 text-primary bubble-animation rotate-45" />
+            <div className="absolute -inset-2 rounded-full bg-primary/20 -z-10 blur-md glow-effect animate-pulse"></div>
+            <div className="absolute -inset-1 rounded-full bg-primary/30 -z-10 blur-sm"></div>
           </div>
           <span className="text-xl font-bold gradient-text">Bubble Invest</span>
         </a>
