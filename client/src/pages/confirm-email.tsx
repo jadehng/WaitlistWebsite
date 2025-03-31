@@ -46,17 +46,17 @@ export default function ConfirmEmail() {
   }, []);
   
   return (
-    <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-b from-background to-background/80">
+    <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-b from-white to-gray-50">
       <motion.div 
         initial="hidden"
         animate="visible"
         variants={fadeInUp}
         className="w-full max-w-md"
       >
-        <Card className="w-full">
+        <Card className="w-full border border-gray-200 shadow-sm">
           <CardHeader>
-            <CardTitle className="text-2xl font-bold text-center">Email Confirmation</CardTitle>
-            <CardDescription className="text-center">
+            <CardTitle className="text-2xl font-bold text-center text-gray-800">Email Confirmation</CardTitle>
+            <CardDescription className="text-center text-gray-600">
               {status === 'loading' ? 'Please wait while we confirm your email' : 
                status === 'success' ? 'Thank you for confirming your email!' : 
                'There was an issue with your confirmation'}
@@ -65,32 +65,31 @@ export default function ConfirmEmail() {
           <CardContent>
             {status === 'loading' && (
               <div className="flex flex-col items-center justify-center p-6">
-                <Loader2 size={48} className="animate-spin text-primary mb-4" />
-                <p className="text-center">{message}</p>
+                <Loader2 size={48} className="animate-spin text-gray-700 mb-4" />
+                <p className="text-center text-gray-600">{message}</p>
               </div>
             )}
             
             {status === 'success' && (
-              <Alert variant="default" className="bg-green-500/10 border-green-500/20">
-                <CheckCircle className="h-5 w-5 text-green-500" />
-                <AlertTitle className="text-green-500">Success!</AlertTitle>
-                <AlertDescription>{message}</AlertDescription>
+              <Alert variant="default" className="bg-green-50 border-green-200">
+                <CheckCircle className="h-5 w-5 text-green-600" />
+                <AlertTitle className="text-green-700">Success!</AlertTitle>
+                <AlertDescription className="text-green-600">{message}</AlertDescription>
               </Alert>
             )}
             
             {status === 'error' && (
-              <Alert variant="destructive">
-                <XCircle className="h-5 w-5" />
-                <AlertTitle>Error</AlertTitle>
-                <AlertDescription>{message}</AlertDescription>
+              <Alert variant="destructive" className="bg-red-50 border-red-200 text-red-600">
+                <XCircle className="h-5 w-5 text-red-600" />
+                <AlertTitle className="text-red-700">Error</AlertTitle>
+                <AlertDescription className="text-red-600">{message}</AlertDescription>
               </Alert>
             )}
           </CardContent>
           <CardFooter className="flex justify-center">
             <Button 
-              variant="default" 
               onClick={() => navigate('/')} 
-              className="w-full"
+              className="w-full bg-gray-800 hover:bg-gray-700 text-white"
             >
               Return to Home
             </Button>

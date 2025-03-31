@@ -97,21 +97,21 @@ const WaitlistForm = () => {
   ];
 
   return (
-    <section id="waitlist" className="py-16 md:py-24 relative overflow-hidden">
-      {/* Gradient background */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-primary/30 via-slate-900 to-slate-900 -z-10"></div>
+    <section id="waitlist" className="py-16 md:py-24 relative overflow-hidden bg-gray-50">
+      {/* Subtle background pattern */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-white via-gray-50 to-gray-100 -z-10"></div>
       
       {/* Circle decorations */}
-      <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-10"></div>
-      <div className="absolute bottom-1/3 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-gray-100 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute bottom-1/3 left-1/4 w-96 h-96 bg-gray-100 rounded-full blur-3xl -z-10"></div>
       
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <div className="inline-flex items-center justify-center px-4 py-1 mb-4 text-xs font-medium text-primary border border-primary/30 rounded-full bg-primary/10">
-            Join the OpenFinance Movement
+          <div className="inline-flex items-center justify-center px-4 py-1 mb-4 text-xs font-medium text-gray-700 border border-gray-300 rounded-full bg-white">
+            Join the Bubble Community
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">Be Part of the <span className="gradient-text">Solution</span></h2>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-800">Be Part of the <span className="gradient-text">Solution</span></h2>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             We're building a community of people who want an honest, transparent financial system that serves people, not profits. This isn't just a product - it's a movement to fundamentally change how finance works and who it works for.
           </p>
         </div>
@@ -119,38 +119,38 @@ const WaitlistForm = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <div className="space-y-8">
-              <div className="tech-card p-8 border-primary/20">
+              <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="p-2 bg-primary/10 rounded-lg border border-primary/20">
-                    <CircleDollarSign className="h-8 w-8 text-primary" />
+                  <div className="p-2 bg-gray-50 rounded-lg border border-gray-200">
+                    <CircleDollarSign className="h-8 w-8 text-gray-700" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold">Our Community Values</h3>
-                    <p className="text-slate-400">What makes us different</p>
+                    <h3 className="text-xl font-bold text-gray-800">Our Community Values</h3>
+                    <p className="text-gray-500">What makes us different</p>
                   </div>
                 </div>
                 
                 <ul className="space-y-4 mt-6">
                   {communityValues.map((value, index) => (
                     <li key={index} className="flex gap-3">
-                      <div className="flex-shrink-0 h-6 w-6 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+                      <div className="flex-shrink-0 h-6 w-6 rounded-full bg-gray-100 flex items-center justify-center text-gray-700">
                         {value.icon}
                       </div>
                       <div>
-                        <p className="font-medium text-white">{value.title}</p>
-                        <p className="text-slate-400 text-sm">{value.description}</p>
+                        <p className="font-medium text-gray-800">{value.title}</p>
+                        <p className="text-gray-600 text-sm">{value.description}</p>
                       </div>
                     </li>
                   ))}
                 </ul>
                 
-                <div className="mt-8 p-4 bg-slate-800/50 rounded-lg border border-slate-700/50">
-                  <p className="text-sm text-slate-300 italic">
+                <div className="mt-8 p-4 bg-gray-50 rounded-lg border border-gray-200">
+                  <p className="text-sm text-gray-700 italic">
                     "Our goal is to build a financial system where honesty is the default, not the exception. Where people are treated as partners, not as sources of profit. Where knowledge is shared, not hoarded as a source of power."
                   </p>
                   <div className="mt-3 flex items-center gap-2">
-                    <div className="w-6 h-6 rounded-full bg-primary/30"></div>
-                    <p className="text-xs text-slate-400">Bubble Community</p>
+                    <div className="w-6 h-6 rounded-full bg-gray-200"></div>
+                    <p className="text-xs text-gray-500">Bubble Community</p>
                   </div>
                 </div>
               </div>
@@ -164,10 +164,10 @@ const WaitlistForm = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <div className="absolute -inset-1 bg-gradient-to-r from-primary/50 to-blue-600/50 rounded-xl blur-xl opacity-20"></div>
-            <div className="tech-card p-8 relative">
-              <h3 className="text-2xl font-bold mb-2">Be a Founding Member</h3>
-              <p className="text-slate-400 mb-6">Help us build a financial system that serves people, not profits</p>
+            <div className="absolute -inset-1 bg-gradient-to-r from-gray-100 to-gray-50 rounded-xl blur-xl opacity-50"></div>
+            <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm relative">
+              <h3 className="text-2xl font-bold mb-2 text-gray-800">Be a Founding Member</h3>
+              <p className="text-gray-600 mb-6">Help us build a financial system that serves people, not profits</p>
               
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -176,11 +176,11 @@ const WaitlistForm = () => {
                     name="name"
                     render={({ field }) => (
                       <FormItem className="space-y-2">
-                        <FormLabel className="text-slate-300">Your Name</FormLabel>
+                        <FormLabel className="text-gray-700">Your Name</FormLabel>
                         <FormControl>
                           <Input 
                             placeholder="Enter your full name"
-                            className="bg-slate-800 border-slate-700 text-white"
+                            className="bg-white border-gray-200 text-gray-800"
                             {...field}
                           />
                         </FormControl>
@@ -194,12 +194,12 @@ const WaitlistForm = () => {
                     name="email"
                     render={({ field }) => (
                       <FormItem className="space-y-2">
-                        <FormLabel className="text-slate-300">Email Address</FormLabel>
+                        <FormLabel className="text-gray-700">Email Address</FormLabel>
                         <FormControl>
                           <Input 
                             type="email" 
                             placeholder="you@example.com"
-                            className="bg-slate-800 border-slate-700 text-white"
+                            className="bg-white border-gray-200 text-gray-800"
                             {...field}
                           />
                         </FormControl>
@@ -213,11 +213,11 @@ const WaitlistForm = () => {
                     name="comments"
                     render={({ field }) => (
                       <FormItem className="space-y-2">
-                        <FormLabel className="text-slate-300">What interests you most about our vision? (Optional)</FormLabel>
+                        <FormLabel className="text-gray-700">What interests you most about our vision? (Optional)</FormLabel>
                         <FormControl>
                           <Textarea 
                             placeholder="Share what resonates with you about our approach to finance..."
-                            className="bg-slate-800 border-slate-700 text-white h-24"
+                            className="bg-white border-gray-200 text-gray-800 h-24"
                             {...field}
                           />
                         </FormControl>
@@ -228,8 +228,8 @@ const WaitlistForm = () => {
                   
                   <div>
                     <div className="flex items-start gap-2">
-                      <Checkbox id="terms" required className="data-[state=checked]:bg-primary" />
-                      <label htmlFor="terms" className="text-sm text-slate-400">
+                      <Checkbox id="terms" required className="border-gray-300 data-[state=checked]:bg-gray-800" />
+                      <label htmlFor="terms" className="text-sm text-gray-600">
                         I want to join the Bubble community for honest, transparent finance. I understand I can unsubscribe from updates anytime.
                       </label>
                     </div>
@@ -237,7 +237,7 @@ const WaitlistForm = () => {
                   
                   <Button 
                     type="submit"
-                    className="w-full glow-effect group"
+                    className="w-full bg-gray-800 hover:bg-gray-700 text-white group"
                     disabled={submitWaitlistMutation.isPending}
                   >
                     {submitWaitlistMutation.isPending ? (
@@ -261,23 +261,23 @@ const WaitlistForm = () => {
         <AnimatePresence>
           {showSuccessModal && (
             <Dialog open={showSuccessModal} onOpenChange={setShowSuccessModal}>
-              <DialogContent className="sm:max-w-md tech-card border-primary/30">
+              <DialogContent className="sm:max-w-md bg-white border border-gray-200">
                 <DialogHeader>
-                  <div className="mx-auto w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mb-4 glow-effect">
-                    <CheckCircle2 className="w-10 h-10 text-primary" />
+                  <div className="mx-auto w-20 h-20 bg-gray-50 rounded-full flex items-center justify-center mb-4 border border-gray-100">
+                    <CheckCircle2 className="w-10 h-10 text-gray-700" />
                   </div>
-                  <DialogTitle className="text-center text-2xl font-bold">Welcome to Bubble!</DialogTitle>
-                  <DialogDescription className="text-center text-slate-400">
+                  <DialogTitle className="text-center text-2xl font-bold text-gray-800">Welcome to Bubble!</DialogTitle>
+                  <DialogDescription className="text-center text-gray-600">
                     Thank you for joining our community for honest, transparent finance. Together, we can create a financial system that works for everyone, not just the select few. We'll keep you updated as we build the future of finance.
                   </DialogDescription>
                 </DialogHeader>
-                <div className="bg-slate-800/50 p-4 rounded-lg mt-4">
-                  <p className="text-center text-slate-300 text-sm">
+                <div className="bg-gray-50 p-4 rounded-lg mt-4 border border-gray-100">
+                  <p className="text-center text-gray-700 text-sm">
                     <span className="font-medium">Spread the word:</span> Share our vision for honest finance with friends who are tired of the traditional system's false promises and hidden fees. Together we can drive real change.
                   </p>
                 </div>
                 <div className="flex justify-center mt-4">
-                  <Button onClick={() => setShowSuccessModal(false)} className="px-8">
+                  <Button onClick={() => setShowSuccessModal(false)} className="px-8 bg-gray-800 hover:bg-gray-700 text-white">
                     Close
                   </Button>
                 </div>

@@ -46,20 +46,20 @@ const features = [
 
 const Features = () => {
   return (
-    <section id="features" className="py-16 md:py-24 bg-slate-900/50 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent -z-10"></div>
+    <section id="features" className="py-16 md:py-24 bg-gray-50 relative overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white via-white to-gray-50 -z-10"></div>
       
       {/* Decorative elements */}
-      <div className="absolute top-1/4 right-0 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl -z-10"></div>
-      <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute top-1/4 right-0 w-64 h-64 bg-gray-100 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-gray-100 rounded-full blur-3xl -z-10"></div>
       
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center px-4 py-1 mb-4 text-xs font-medium text-primary border border-primary/30 rounded-full bg-primary/10">
+          <div className="inline-flex items-center justify-center px-4 py-1 mb-4 text-xs font-medium text-gray-700 border border-gray-300 rounded-full bg-white">
             Our Core Principles
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">A Vision for <span className="gradient-text">Honest Finance</span></h2>
-          <p className="text-slate-400 text-lg max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">A Vision for <span className="gradient-text">Honest Finance</span></h2>
+          <p className="text-gray-600 text-lg max-w-3xl mx-auto">
             The financial industry has lost its way. Instead of serving people, it often exploits them through confusion, complexity, and conflicts of interest. We're building a new path forward based on these core principles.
           </p>
         </div>
@@ -77,27 +77,27 @@ const Features = () => {
               className="tech-card p-8 h-full flex flex-col"
               variants={fadeInUp}
             >
-              <div className="bg-primary/20 p-3 rounded-lg inline-flex mb-6">
-                <div className="text-primary">
+              <div className="bg-gray-100 p-3 rounded-lg inline-flex mb-6">
+                <div className="text-gray-700">
                   {feature.icon}
                 </div>
               </div>
-              <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
-              <p className="text-slate-400 flex-grow">
+              <h3 className="text-xl font-semibold mb-3 text-gray-800">{feature.title}</h3>
+              <p className="text-gray-600 flex-grow">
                 {feature.description}
               </p>
             </motion.div>
           ))}
         </motion.div>
         
-        <div className="mt-20 p-8 tech-card border border-slate-800">
+        <div className="mt-20 p-8 tech-card border border-gray-200">
           <div className="flex flex-col md:flex-row items-center gap-6">
-            <div className="bg-primary/20 p-3 rounded-lg inline-flex">
-              <Lightbulb className="w-10 h-10 text-primary" />
+            <div className="bg-gray-100 p-3 rounded-lg inline-flex">
+              <Lightbulb className="w-10 h-10 text-gray-700" />
             </div>
             <div className="flex-grow">
-              <h3 className="text-xl font-semibold mb-2">Our Promise to You</h3>
-              <p className="text-slate-400">
+              <h3 className="text-xl font-semibold mb-2 text-gray-800">Our Promise to You</h3>
+              <p className="text-gray-600">
                 We believe finance should exist to serve your needs, not to exploit you. We will never use complex language to confuse you, claim we can predict markets, hide fees, or pretend we have special knowledge that others don't. 
                 We're building a system based on honesty, fairness, and mutual respect—where your interests and our interests are perfectly aligned.
               </p>

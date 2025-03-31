@@ -18,19 +18,19 @@
   }
 
   .light button.primary {
-    @apply bg-primary text-white hover:bg-primary/90 transition-colors;
+    @apply bg-[#18181b] text-white hover:bg-[#2d2d33] transition-colors;
   }
 
   .light button.secondary {
-    @apply bg-[#18181b] text-white border border-[#18181b]/10 hover:bg-[#2d2d33] transition-colors;
+    @apply bg-[#18181b]/90 text-white border border-[#18181b]/10 hover:bg-[#2d2d33] transition-colors;
   }
   
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/80;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#18181b] to-[#18181b]/80;
   }
   
   .gradient-bg {
-    @apply bg-gradient-to-r from-primary/5 to-blue-400/5;
+    @apply bg-gradient-to-r from-[#f8fafc] to-white;
   }
   
   .chart-grid {
@@ -38,11 +38,11 @@
   }
   
   .tech-card {
-    @apply bg-white border border-slate-200 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-slate-200 hover:border-primary/20;
+    @apply bg-white border border-slate-100 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-sm hover:border-gray-200;
   }
   
   .glow-effect {
-    box-shadow: 0 0 30px -5px rgba(59, 130, 246, 0.1);
+    box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.05);
   }
   
   .bubble-animation {
@@ -63,15 +63,15 @@
   
   /* Glass effect classes for the transparency theme */
   .glass-card {
-    @apply bg-white/80 backdrop-blur-md border border-slate-200 rounded-lg shadow-sm;
+    @apply bg-white border border-slate-100 rounded-lg shadow-sm;
   }
   
   .glass-effect {
-    @apply bg-white/40 backdrop-blur-md border border-slate-100;
+    @apply bg-white border border-slate-50;
   }
   
   .transparent-card {
-    @apply bg-gradient-to-b from-white/90 to-white/70 backdrop-blur-sm border border-slate-200 rounded-lg shadow-sm;
+    @apply bg-white border border-slate-100 rounded-lg shadow-sm;
   }
   
   /* Typography classes for better readability */
@@ -81,7 +81,7 @@
   
   /* Accent elements */
   .accent-border {
-    @apply border-l-2 border-primary pl-4;
+    @apply border-l-2 border-[#18181b] pl-4;
   }
   
   /* Special elements for transparency theme */
