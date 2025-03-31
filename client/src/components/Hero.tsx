@@ -26,14 +26,14 @@ const Hero = () => {
             variants={fadeIn}
           >
             <div className="inline-block px-3 py-1 mb-6 text-xs font-medium text-primary border border-primary/30 rounded-full bg-primary/10">
-              Transparent by design
+              Our Vision
             </div>
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-              Finance for <br/>
-              <span className="gradient-text">humans, not profit</span>
+              Fair finance <br/>
+              <span className="gradient-text">for all</span>
             </h1>
             <p className="text-lg text-slate-400 mb-8 max-w-lg">
-              Join a community that believes finance should be honest, transparent, and accessible to all. The current system isn't working for most people - it's complicated, expensive, and often puts profits over people.
+              We believe finance should be honest, transparent, and accessible to all. The current system isn't working for most people - it's complicated, expensive, and often puts profits over people.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" onClick={() => scrollToSection('waitlist')} className="glow-effect">
