@@ -18,7 +18,7 @@
   }
 
   .dark button.secondary {
-    @apply bg-black text-white border border-white/20 hover:bg-gray-800 transition-colors;
+    @apply bg-black text-white border border-white/20 hover:bg-gray-700 transition-colors;
   }
   
   .gradient-text {

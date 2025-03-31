@@ -14,7 +14,7 @@ export default {
         background: "#000000",
         foreground: "#ffffff",
         card: {
-          DEFAULT: "#0a0a0a",
+          DEFAULT: "#0f0f0f",
           foreground: "#ffffff",
         },
         popover: {
