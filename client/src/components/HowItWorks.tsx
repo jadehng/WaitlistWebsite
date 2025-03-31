@@ -14,26 +14,26 @@ const problems = [
   {
     icon: <AlertTriangle className="w-8 h-8" />,
     number: "01",
-    title: "The Problem We See",
-    description: "Traditional finance is built on extracting maximum value from customers through complex fee structures, confusing jargon, and misaligned incentives."
+    title: "The Broken System",
+    description: "Today's finance is deliberately complex. Products are unnecessarily complicated, fees are hidden, predictions are sold as facts, and financial 'experts' claim special knowledge they don't have."
   },
   {
     icon: <Lightbulb className="w-8 h-8" />,
     number: "02",
-    title: "Our Approach",
-    description: "We believe investing should be transparent, ethical, and accessible. We start with education, not sales pitches, and build community around shared values."
+    title: "OpenFinance Vision",
+    description: "We're creating a new approach based on radical transparency, fair pricing, honest education, and aligned incentives. We believe finance should work for people, not against them."
   },
   {
     icon: <Users className="w-8 h-8" />,
     number: "03",
-    title: "Community Building",
-    description: "By joining Bubble Invest, you become part of a movement to reshape finance for the 21st century. Your input helps us create a better solution for everyone."
+    title: "Building Together",
+    description: "This isn't just our project - it's a movement. We're inviting people who share our vision to join us in creating a better financial system that serves everyone, not just the wealthy few."
   },
   {
     icon: <BookOpen className="w-8 h-8" />,
     number: "04",
-    title: "Education First",
-    description: "Before recommending any investment, we provide the knowledge you need to understand exactly what you're investing in and why it aligns with your goals."
+    title: "Continuous Learning",
+    description: "We believe in democratizing financial knowledge. Everyone deserves to understand how their money works, what they're investing in, and the true nature of risk and return in plain language."
   }
 ];
 
@@ -54,12 +54,12 @@ const HowItWorks = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="text-center mb-16">
           <div className="inline-flex items-center justify-center px-4 py-1 mb-4 text-xs font-medium text-primary border border-primary/30 rounded-full bg-primary/10">
-            Our Vision
+            A New Path Forward
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">The <span className="gradient-text">Broken System</span> We're Fixing</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Making Finance <span className="gradient-text">Work For You</span></h2>
           <p className="text-slate-400 text-lg max-w-3xl mx-auto">
-            We're not just building another investment app. We're creating a community-driven approach to solve 
-            real problems in the financial industry through education, transparency, and ethical principles.
+            The financial system should exist to serve people, not exploit them. Yet the industry has evolved to 
+            prioritize profits over helping people achieve their financial goals. We're building a better way.
           </p>
         </div>
 
@@ -109,37 +109,37 @@ const HowItWorks = () => {
                     <div className="p-3 bg-primary/10 rounded-lg border border-primary/20">
                       <Layers className="h-6 w-6 text-primary" />
                     </div>
-                    <h3 className="text-xl font-bold">The Financial System Is Broken</h3>
+                    <h3 className="text-xl font-bold">What's Wrong with Finance Today</h3>
                   </div>
                   
                   <div className="space-y-6 mb-8">
                     <div className="p-4 rounded-lg bg-slate-800/50 border border-slate-700/50">
                       <h4 className="font-medium mb-2 flex items-center gap-2">
                         <span className="text-red-400 text-xl">✗</span>
-                        False Market Predictions
+                        Manufactured Complexity
                       </h4>
                       <p className="text-sm text-slate-400">
-                        Traditional finance professionals claim they can predict market movements and "beat the market," despite overwhelming evidence that this is impossible.
+                        The financial industry creates unnecessarily complex products and strategies to justify high fees and make customers dependent on "expert" guidance.
                       </p>
                     </div>
                     
                     <div className="p-4 rounded-lg bg-slate-800/50 border border-slate-700/50">
                       <h4 className="font-medium mb-2 flex items-center gap-2">
                         <span className="text-red-400 text-xl">✗</span>
-                        Misaligned Incentives
+                        False Expertise Claims
                       </h4>
                       <p className="text-sm text-slate-400">
-                        Percentage-based fees mean advisors make more money as your assets grow, even if they didn't contribute to that growth.
+                        Financial professionals sell the illusion that they can predict market movements or pick winning investments, despite decades of evidence showing this is impossible.
                       </p>
                     </div>
                     
                     <div className="p-4 rounded-lg bg-slate-800/50 border border-slate-700/50">
                       <h4 className="font-medium mb-2 flex items-center gap-2">
                         <span className="text-red-400 text-xl">✗</span>
-                        Lack of Transparency
+                        Profit Over People
                       </h4>
                       <p className="text-sm text-slate-400">
-                        The industry benefits from keeping consumers confused and dependent on "experts" rather than acknowledging the limitations of financial forecasting.
+                        The entire system is designed to extract maximum value from consumers through hidden fees, conflicts of interest, and business models where your financial success is secondary to their profits.
                       </p>
                     </div>
                   </div>
@@ -150,12 +150,12 @@ const HowItWorks = () => {
                         <Clock className="h-5 w-5 text-primary" />
                       </div>
                       <div>
-                        <h4 className="font-medium mb-1">Our Solution</h4>
+                        <h4 className="font-medium mb-1">The OpenFinance Solution</h4>
                         <p className="text-sm text-slate-400 mb-4">
-                          A subscription-based platform that's honest about market unpredictability, with transparent pricing, educational resources, and a community focused on what truly matters for long-term success.
+                          We're creating a new financial system based on honesty, fairness, and transparency. We'll use plain language, offer fair subscription pricing, refuse to make market predictions, and provide education that empowers you to make informed decisions.
                         </p>
                         <Button onClick={() => scrollToSection('waitlist')} className="w-full">
-                          Join Us in Fixing Finance
+                          Join Our OpenFinance Movement
                         </Button>
                       </div>
                     </div>

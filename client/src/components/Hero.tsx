@@ -26,14 +26,14 @@ const Hero = () => {
             variants={fadeIn}
           >
             <div className="inline-block px-3 py-1 mb-6 text-xs font-medium text-primary border border-primary/30 rounded-full bg-primary/10">
-              Finance reimagined for everyone
+              OpenFinance: A New Path Forward
             </div>
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-              Making finance <br/>
-              <span className="gradient-text">honest & accessible</span>
+              Finance for <br/>
+              <span className="gradient-text">humans, not profit</span>
             </h1>
             <p className="text-lg text-slate-400 mb-8 max-w-lg">
-              Join a community that believes investing should be long-term oriented, transparent, and accessible to all. We're building a subscription-based solution that puts your financial future first.
+              Join a community that believes finance should be honest, transparent, and accessible to all. The current system isn't working for most people - it's complicated, expensive, and often puts profits over people.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" onClick={() => scrollToSection('waitlist')} className="glow-effect">
@@ -46,10 +46,10 @@ const Hero = () => {
             
             <div className="mt-12 grid grid-cols-2 gap-4">
               {[
-                { icon: <Clock className="h-5 w-5" />, text: "Long-term value creation" },
-                { icon: <ShieldCheck className="h-5 w-5" />, text: "No false market predictions" },
-                { icon: <Users className="h-5 w-5" />, text: "Community-powered" },
-                { icon: <Library className="h-5 w-5" />, text: "Financial education" }
+                { icon: <ShieldCheck className="h-5 w-5" />, text: "Radical Transparency" },
+                { icon: <Clock className="h-5 w-5" />, text: "Ethical Investing" },
+                { icon: <Users className="h-5 w-5" />, text: "Fair Compensation" },
+                { icon: <Library className="h-5 w-5" />, text: "Empowerment Through Education" }
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-2 text-slate-300">
                   <div className="flex items-center justify-center bg-primary/20 rounded-full w-8 h-8 text-primary">
@@ -75,10 +75,10 @@ const Hero = () => {
                     <div className="p-2 bg-primary/10 rounded-lg border border-primary/20">
                       <CircleDollarSign className="h-6 w-6 text-primary" />
                     </div>
-                    <h3 className="text-xl font-bold">Our Mission</h3>
+                    <h3 className="text-xl font-bold">What We're Building</h3>
                   </div>
                   <p className="text-slate-300 leading-relaxed">
-                    We believe that the current financial system is broken. It's designed to benefit institutions, not individuals.
+                    Bubble Invest is our first step toward a better financial future. We're creating a smarter investment platform and business automation tools that help embrace modern technology.
                   </p>
                 </div>
                 
@@ -89,8 +89,8 @@ const Hero = () => {
                         <TrendingUp className="h-5 w-5 text-blue-400" />
                       </div>
                       <div>
-                        <h4 className="font-medium mb-1">Problem</h4>
-                        <p className="text-sm text-slate-400">The financial industry profits from false predictions, complex products, high fees, and convincing people they need "experts" who claim to predict unpredictable markets.</p>
+                        <h4 className="font-medium mb-1">Our Vision</h4>
+                        <p className="text-sm text-slate-400">We believe finance should be honest, transparent, and accessible to everyone. Our goal is to create a system that works for ordinary people, not just the wealthy or financial institutions.</p>
                       </div>
                     </div>
                   </div>
@@ -101,8 +101,8 @@ const Hero = () => {
                         <ShieldCheck className="h-5 w-5 text-green-400" />
                       </div>
                       <div>
-                        <h4 className="font-medium mb-1">Solution</h4>
-                        <p className="text-sm text-slate-400">A transparent, subscription-based platform that's honest about market uncertainty, emphasizes education, community, and focuses on the factors you can actually control.</p>
+                        <h4 className="font-medium mb-1">Our Promise</h4>
+                        <p className="text-sm text-slate-400">We won't use complicated language to confuse you. We won't claim we can predict markets. We'll be transparent about fees and we'll educate before we recommend any investment approach.</p>
                       </div>
                     </div>
                   </div>
@@ -110,9 +110,9 @@ const Hero = () => {
                 
                 <div className="mt-6 pt-6 border-t border-slate-800">
                   <div className="flex flex-col">
-                    <p className="text-sm text-slate-400 mb-2">Join us to help reshape finance for the 21st century</p>
+                    <p className="text-sm text-slate-400 mb-2">By working together, we can create a better financial future</p>
                     <Button onClick={() => scrollToSection('waitlist')} variant="default" className="w-full">
-                      Be Part of the Change
+                      Join Our OpenFinance Movement
                     </Button>
                   </div>
                 </div>

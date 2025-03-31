@@ -13,34 +13,34 @@ import { staggerContainer, fadeInUp } from "@/lib/animations";
 
 const features = [
   {
-    icon: <Clock className="w-10 h-10" />,
-    title: "Long-Term Value Creation",
-    description: "We focus on sustainable growth over decades, not quarters. True wealth is built with patience and consistency, not chasing trends or timing markets."
-  },
-  {
     icon: <ShieldCheck className="w-10 h-10" />,
-    title: "Ethical & Transparent",
-    description: "We believe in full disclosure of our investment philosophy, fees, and potential risks. No hidden costs, no complex fee structures designed to confuse."
+    title: "Radical Transparency",
+    description: "We're committed to complete honesty about how finance works. We'll tell you when something is unknowable, like future market performance, and focus on what can actually be controlled."
   },
   {
     icon: <Users className="w-10 h-10" />,
-    title: "Community-Driven",
-    description: "Join a community of like-minded individuals who believe in fair, accessible finance. Share knowledge, learn together, and grow collectively."
+    title: "People Over Profits",
+    description: "We believe financial services should serve people, not the other way around. Our success is measured by our impact on our community's financial wellbeing, not by extracting maximum profit."
   },
   {
     icon: <LibraryBig className="w-10 h-10" />,
-    title: "Financial Education First",
-    description: "We prioritize helping you understand how finance works. Educational resources, interactive tools, and clear explanations accompany every feature."
+    title: "Knowledge as Freedom",
+    description: "Education is at our core. We'll teach you the fundamentals of finance in plain language so you can make informed decisions and understand exactly what you're investing in and why."
+  },
+  {
+    icon: <Scale className="w-10 h-10" />,
+    title: "Fair Compensation",
+    description: "Our flat subscription model means we don't make more money as your investments grow. We're incentivized to provide quality service and education, not to maximize assets under management."
   },
   {
     icon: <Handshake className="w-10 h-10" />,
-    title: "No False Promises",
-    description: "Unlike traditional financial services that claim to predict markets, we acknowledge that no one can truly forecast financial futures. We focus on what's controllable instead."
+    title: "Accountable & Aligned",
+    description: "We'll never claim to predict the future or time the markets. Instead, we'll focus on managing risk appropriately, diversification, and ensuring our interests are fully aligned with yours."
   },
   {
-    icon: <CircleDollarSign className="w-10 h-10" />,
-    title: "Subscription, Not Percentage",
-    description: "Our transparent subscription model means we charge a flat fee instead of a percentage of assets. As your wealth grows, our fee stays the same."
+    icon: <Clock className="w-10 h-10" />,
+    title: "Long-Term Thinking",
+    description: "We reject the culture of short-term gains that dominates finance. Instead, we encourage sustainable growth over decades through patience, consistency, and sound fundamentals."
   }
 ];
 
@@ -56,12 +56,11 @@ const Features = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="text-center mb-16">
           <div className="inline-flex items-center justify-center px-4 py-1 mb-4 text-xs font-medium text-primary border border-primary/30 rounded-full bg-primary/10">
-            Our Principles
+            OpenFinance Principles
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Revolutionizing <span className="gradient-text">Finance for Good</span></h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">A Vision for <span className="gradient-text">Honest Finance</span></h2>
           <p className="text-slate-400 text-lg max-w-3xl mx-auto">
-            We're building a financial community that puts people first. Our mission is to make finance honest,
-            transparent, and accessible to all, with a focus on ethical principles and long-term value creation.
+            The financial industry has lost its way. Instead of serving people, it often exploits them through confusion, complexity, and conflicts of interest. We're building a new path forward based on these core principles.
           </p>
         </div>
 
@@ -97,11 +96,10 @@ const Features = () => {
               <Lightbulb className="w-10 h-10 text-primary" />
             </div>
             <div className="flex-grow">
-              <h3 className="text-xl font-semibold mb-2">A New Financial Paradigm</h3>
+              <h3 className="text-xl font-semibold mb-2">Our Promise to You</h3>
               <p className="text-slate-400">
-                We're not just building another investment platform. We're creating a movement to reshape finance
-                for the 21st century—one that serves people rather than extracting value from them, that educates
-                rather than obscures, and that builds community rather than encouraging isolation.
+                We believe finance should exist to serve your needs, not to exploit you. We will never use complex language to confuse you, claim we can predict markets, hide fees, or pretend we have special knowledge that others don't. 
+                We're building a system based on honesty, fairness, and mutual respect—where your interests and our interests are perfectly aligned.
               </p>
             </div>
           </div>

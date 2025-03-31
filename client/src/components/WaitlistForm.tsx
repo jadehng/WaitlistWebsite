@@ -76,23 +76,23 @@ const WaitlistForm = () => {
   const communityValues = [
     {
       icon: <Lightbulb className="w-5 h-5" />,
-      title: "Shared Vision",
-      description: "Join a community that believes in ethical, transparent, and accessible finance"
+      title: "Honest Finance",
+      description: "Join a community that rejects false promises and embraces radical transparency"
     },
     {
       icon: <Users className="w-5 h-5" />,
-      title: "Collective Wisdom",
-      description: "Benefit from community knowledge sharing and group financial education"
+      title: "People-First Approach",
+      description: "Help build financial services that prioritize human needs over corporate profits"
     },
     {
       icon: <BookOpen className="w-5 h-5" />,
-      title: "Educational Focus",
-      description: "Access resources to understand investing fundamentals before making decisions"
+      title: "Knowledge Democratization",
+      description: "Access clear, jargon-free financial education that empowers informed decisions"
     },
     {
       icon: <ShieldCheck className="w-5 h-5" />,
-      title: "Value Alignment",
-      description: "Be part of a movement that values long-term growth over short-term gains"
+      title: "Aligned Incentives",
+      description: "Support a model where our success is directly tied to delivering genuine value to you"
     }
   ];
 
@@ -108,11 +108,11 @@ const WaitlistForm = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <div className="inline-flex items-center justify-center px-4 py-1 mb-4 text-xs font-medium text-primary border border-primary/30 rounded-full bg-primary/10">
-            Building a Community
+            Join the OpenFinance Movement
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">Join Our <span className="gradient-text">Movement</span></h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">Be Part of the <span className="gradient-text">Solution</span></h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-            We're creating a community of people who believe finance should work differently. This isn't just a product - it's a vision for how we can make finance more ethical, transparent, and accessible for everyone.
+            We're building a community of people who want an honest, transparent financial system that serves people, not profits. This isn't just a product - it's a movement to fundamentally change how finance works and who it works for.
           </p>
         </div>
 
@@ -146,11 +146,11 @@ const WaitlistForm = () => {
                 
                 <div className="mt-8 p-4 bg-slate-800/50 rounded-lg border border-slate-700/50">
                   <p className="text-sm text-slate-300 italic">
-                    "We're not just building another financial app. We're creating a movement that puts education first, transparency at the center, and long-term value creation as the goal."
+                    "Our goal is to build a financial system where honesty is the default, not the exception. Where people are treated as partners, not as sources of profit. Where knowledge is shared, not hoarded as a source of power."
                   </p>
                   <div className="mt-3 flex items-center gap-2">
                     <div className="w-6 h-6 rounded-full bg-primary/30"></div>
-                    <p className="text-xs text-slate-400">Founder, Bubble Invest</p>
+                    <p className="text-xs text-slate-400">OpenFinance Community</p>
                   </div>
                 </div>
               </div>
@@ -166,8 +166,8 @@ const WaitlistForm = () => {
           >
             <div className="absolute -inset-1 bg-gradient-to-r from-primary/50 to-blue-600/50 rounded-xl blur-xl opacity-20"></div>
             <div className="tech-card p-8 relative">
-              <h3 className="text-2xl font-bold mb-2">Join the Movement</h3>
-              <p className="text-slate-400 mb-6">Be part of a community reshaping finance for the 21st century</p>
+              <h3 className="text-2xl font-bold mb-2">Be a Founding Member</h3>
+              <p className="text-slate-400 mb-6">Help us build a financial system that serves people, not profits</p>
               
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -230,7 +230,7 @@ const WaitlistForm = () => {
                     <div className="flex items-start gap-2">
                       <Checkbox id="terms" required className="data-[state=checked]:bg-primary" />
                       <label htmlFor="terms" className="text-sm text-slate-400">
-                        I'd like to be part of this community and receive updates. I understand I can unsubscribe anytime.
+                        I want to join the OpenFinance movement for honest, transparent finance. I understand I can unsubscribe from updates anytime.
                       </label>
                     </div>
                   </div>
@@ -247,7 +247,7 @@ const WaitlistForm = () => {
                       </>
                     ) : (
                       <span className="flex items-center">
-                        Join Our Community
+                        Join OpenFinance Movement
                         <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                       </span>
                     )}
@@ -266,14 +266,14 @@ const WaitlistForm = () => {
                   <div className="mx-auto w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mb-4 glow-effect">
                     <CheckCircle2 className="w-10 h-10 text-primary" />
                   </div>
-                  <DialogTitle className="text-center text-2xl font-bold">Welcome to Our Community!</DialogTitle>
+                  <DialogTitle className="text-center text-2xl font-bold">Welcome to OpenFinance!</DialogTitle>
                   <DialogDescription className="text-center text-slate-400">
-                    Thank you for joining us on this journey to reshape finance. We're excited to build something meaningful together and will keep you updated on our progress.
+                    Thank you for joining our movement for honest, transparent finance. Together, we can create a financial system that works for everyone, not just the select few. We'll keep you updated as we build the future of finance.
                   </DialogDescription>
                 </DialogHeader>
                 <div className="bg-slate-800/50 p-4 rounded-lg mt-4">
                   <p className="text-center text-slate-300 text-sm">
-                    <span className="font-medium">Help us grow:</span> Share our vision with like-minded friends who might be interested in joining our community of financial changemakers.
+                    <span className="font-medium">Spread the word:</span> Share our vision for honest finance with friends who are tired of the traditional system's false promises and hidden fees. Together we can drive real change.
                   </p>
                 </div>
                 <div className="flex justify-center mt-4">
