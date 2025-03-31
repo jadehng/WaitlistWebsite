@@ -53,15 +53,15 @@ export const sendConfirmationEmail = async (
     const confirmUrl = `${baseUrl}/confirm-email?token=${confirmationToken}`;
     
     const mailOptions = {
-      from: '"Bubble Invest" <noreply@bubbleinvest.com>',
+      from: '"Bubble" <noreply@bubble.com>',
       to: email,
-      subject: 'Please Confirm Your Email for Bubble Invest Waitlist',
-      text: `Hello ${name},\n\nThank you for joining the Bubble Invest waitlist. We're excited to have you as part of our community focused on long-term oriented finance.\n\nPlease confirm your email by clicking the following link:\n${confirmUrl}\n\nThis link will expire in 24 hours.\n\nBest regards,\nThe Bubble Invest Team`,
+      subject: 'Please Confirm Your Email for Bubble Waitlist',
+      text: `Hello ${name},\n\nThank you for joining the Bubble waitlist. We're excited to have you as part of our community focused on transparent and honest finance.\n\nPlease confirm your email by clicking the following link:\n${confirmUrl}\n\nThis link will expire in 24 hours.\n\nBest regards,\nThe Bubble Team`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; color: #333333;">
-          <h2 style="color: #6F5CE0;">Welcome to Bubble Invest</h2>
+          <h2 style="color: #6F5CE0;">Welcome to Bubble</h2>
           <p>Hello ${name},</p>
-          <p>Thank you for joining the Bubble Invest waitlist. We're excited to have you as part of our community focused on long-term oriented finance.</p>
+          <p>Thank you for joining the Bubble waitlist. We're excited to have you as part of our community focused on transparent and honest finance.</p>
           <p>Please confirm your email by clicking the button below:</p>
           <p style="text-align: center; margin: 30px 0;">
             <a href="${confirmUrl}" style="background-color: #6F5CE0; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; display: inline-block; font-weight: bold;">Confirm Email</a>
@@ -69,7 +69,7 @@ export const sendConfirmationEmail = async (
           <p style="color: #666; font-size: 0.9em;">This link will expire in 24 hours.</p>
           <p>If the button doesn't work, you can also copy and paste this link into your browser:</p>
           <p style="word-break: break-all; font-size: 0.8em;">${confirmUrl}</p>
-          <p>Best regards,<br>The Bubble Invest Team</p>
+          <p>Best regards,<br>The Bubble Team</p>
         </div>
       `,
     };

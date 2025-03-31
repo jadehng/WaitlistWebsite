@@ -56,7 +56,7 @@ const Features = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="text-center mb-16">
           <div className="inline-flex items-center justify-center px-4 py-1 mb-4 text-xs font-medium text-primary border border-primary/30 rounded-full bg-primary/10">
-            OpenFinance Principles
+            Our Core Principles
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">A Vision for <span className="gradient-text">Honest Finance</span></h2>
           <p className="text-slate-400 text-lg max-w-3xl mx-auto">

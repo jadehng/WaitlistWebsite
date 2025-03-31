@@ -29,7 +29,7 @@ const Navbar = () => {
             <div className="absolute -inset-2 rounded-full bg-primary/20 -z-10 blur-md glow-effect animate-pulse"></div>
             <div className="absolute -inset-1 rounded-full bg-primary/30 -z-10 blur-sm"></div>
           </div>
-          <span className="text-xl font-bold gradient-text">Bubble Invest</span>
+          <span className="text-xl font-bold gradient-text">Bubble</span>
         </a>
 
         <div className="hidden md:flex gap-8 items-center">

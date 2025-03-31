@@ -150,7 +150,7 @@ const WaitlistForm = () => {
                   </p>
                   <div className="mt-3 flex items-center gap-2">
                     <div className="w-6 h-6 rounded-full bg-primary/30"></div>
-                    <p className="text-xs text-slate-400">OpenFinance Community</p>
+                    <p className="text-xs text-slate-400">Bubble Community</p>
                   </div>
                 </div>
               </div>
@@ -230,7 +230,7 @@ const WaitlistForm = () => {
                     <div className="flex items-start gap-2">
                       <Checkbox id="terms" required className="data-[state=checked]:bg-primary" />
                       <label htmlFor="terms" className="text-sm text-slate-400">
-                        I want to join the OpenFinance movement for honest, transparent finance. I understand I can unsubscribe from updates anytime.
+                        I want to join the Bubble community for honest, transparent finance. I understand I can unsubscribe from updates anytime.
                       </label>
                     </div>
                   </div>
@@ -247,7 +247,7 @@ const WaitlistForm = () => {
                       </>
                     ) : (
                       <span className="flex items-center">
-                        Join OpenFinance Movement
+                        Join Bubble Community
                         <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                       </span>
                     )}
@@ -266,9 +266,9 @@ const WaitlistForm = () => {
                   <div className="mx-auto w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mb-4 glow-effect">
                     <CheckCircle2 className="w-10 h-10 text-primary" />
                   </div>
-                  <DialogTitle className="text-center text-2xl font-bold">Welcome to OpenFinance!</DialogTitle>
+                  <DialogTitle className="text-center text-2xl font-bold">Welcome to Bubble!</DialogTitle>
                   <DialogDescription className="text-center text-slate-400">
-                    Thank you for joining our movement for honest, transparent finance. Together, we can create a financial system that works for everyone, not just the select few. We'll keep you updated as we build the future of finance.
+                    Thank you for joining our community for honest, transparent finance. Together, we can create a financial system that works for everyone, not just the select few. We'll keep you updated as we build the future of finance.
                   </DialogDescription>
                 </DialogHeader>
                 <div className="bg-slate-800/50 p-4 rounded-lg mt-4">

@@ -20,7 +20,7 @@ const Footer = () => {
                 <div className="absolute -inset-2 rounded-full bg-primary/20 -z-10 blur-md glow-effect animate-pulse"></div>
                 <div className="absolute -inset-1 rounded-full bg-primary/30 -z-10 blur-sm"></div>
               </div>
-              <span className="text-xl font-bold gradient-text">Bubble Invest</span>
+              <span className="text-xl font-bold gradient-text">Bubble</span>
             </div>
             <p className="text-slate-400 mb-6 max-w-md">
               Modern, accessible, and long-term oriented investing with transparent strategies that focus on what you can control, not on false market predictions.
@@ -94,7 +94,7 @@ const Footer = () => {
 
         <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-slate-400 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} Bubble Invest, Inc. All rights reserved.
+            &copy; {new Date().getFullYear()} Bubble, Inc. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-slate-400 hover:text-primary text-sm transition-colors">Report Bug</a>

@@ -26,7 +26,7 @@ const Hero = () => {
             variants={fadeIn}
           >
             <div className="inline-block px-3 py-1 mb-6 text-xs font-medium text-primary border border-primary/30 rounded-full bg-primary/10">
-              OpenFinance: A New Path Forward
+              Transparent by design
             </div>
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
               Finance for <br/>
@@ -78,7 +78,7 @@ const Hero = () => {
                     <h3 className="text-xl font-bold">What We're Building</h3>
                   </div>
                   <p className="text-slate-300 leading-relaxed">
-                    Bubble Invest is our first step toward a better financial future. We're creating a smarter investment platform and business automation tools that help embrace modern technology.
+                    Bubble is our first step toward a better financial future. We're creating a smarter investment platform and business automation tools that help embrace modern technology.
                   </p>
                 </div>
                 
@@ -112,7 +112,7 @@ const Hero = () => {
                   <div className="flex flex-col">
                     <p className="text-sm text-slate-400 mb-2">By working together, we can create a better financial future</p>
                     <Button onClick={() => scrollToSection('waitlist')} variant="default" className="w-full">
-                      Join Our OpenFinance Movement
+                      Join The Bubble Community
                     </Button>
                   </div>
                 </div>

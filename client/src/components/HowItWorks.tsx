@@ -20,7 +20,7 @@ const problems = [
   {
     icon: <Lightbulb className="w-8 h-8" />,
     number: "02",
-    title: "OpenFinance Vision",
+    title: "Bubble Vision",
     description: "We're creating a new approach based on radical transparency, fair pricing, honest education, and aligned incentives. We believe finance should work for people, not against them."
   },
   {
@@ -150,12 +150,12 @@ const HowItWorks = () => {
                         <Clock className="h-5 w-5 text-primary" />
                       </div>
                       <div>
-                        <h4 className="font-medium mb-1">The OpenFinance Solution</h4>
+                        <h4 className="font-medium mb-1">The Bubble Solution</h4>
                         <p className="text-sm text-slate-400 mb-4">
                           We're creating a new financial system based on honesty, fairness, and transparency. We'll use plain language, offer fair subscription pricing, refuse to make market predictions, and provide education that empowers you to make informed decisions.
                         </p>
                         <Button onClick={() => scrollToSection('waitlist')} className="w-full">
-                          Join Our OpenFinance Movement
+                          Join Our Community
                         </Button>
                       </div>
                     </div>
