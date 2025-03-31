@@ -23,13 +23,16 @@ const Navbar = () => {
   return (
     <nav className="border-b border-slate-800 backdrop-blur-lg bg-slate-900/80 fixed w-full z-50 px-4 md:px-8 py-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2 z-10">
-          <div className="relative">
-            <Network className="w-8 h-8 text-primary bubble-animation rotate-45" />
-            <div className="absolute -inset-2 rounded-full bg-primary/20 -z-10 blur-md glow-effect animate-pulse"></div>
-            <div className="absolute -inset-1 rounded-full bg-primary/30 -z-10 blur-sm"></div>
+        <a href="#" className="flex flex-col items-start z-10">
+          <div className="flex items-center gap-2">
+            <div className="relative">
+              <Network className="w-8 h-8 text-primary bubble-animation rotate-45" />
+              <div className="absolute -inset-2 rounded-full bg-primary/20 -z-10 blur-md glow-effect animate-pulse"></div>
+              <div className="absolute -inset-1 rounded-full bg-primary/30 -z-10 blur-sm"></div>
+            </div>
+            <span className="text-xl font-bold gradient-text">Bubble</span>
           </div>
-          <span className="text-xl font-bold gradient-text">Bubble</span>
+          <span className="text-xs text-primary/80 ml-10 -mt-1">Transparent by design</span>
         </a>
 
         <div className="hidden md:flex gap-8 items-center">
