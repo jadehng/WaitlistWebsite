@@ -11,11 +11,11 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
-        background: "#0c1117",
-        foreground: "#ffffff",
+        background: "#ffffff",
+        foreground: "#18181b",
         card: {
-          DEFAULT: "#141c24",
-          foreground: "#ffffff",
+          DEFAULT: "#f8fafc",
+          foreground: "#18181b",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
