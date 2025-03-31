@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="md:col-span-4">
             <div className="flex items-center gap-2 mb-6">
               <div className="relative">
-                <Network className="w-8 h-8 text-primary rotate-45" />
+                <Network className="w-8 h-8 text-primary bubble-animation rotate-45" />
                 <div className="absolute -inset-2 rounded-full bg-primary/20 -z-10 blur-md glow-effect animate-pulse"></div>
                 <div className="absolute -inset-1 rounded-full bg-primary/30 -z-10 blur-sm"></div>
               </div>
