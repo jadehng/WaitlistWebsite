@@ -6,11 +6,11 @@ const Footer = () => {
     <footer className="bg-slate-900 border-t border-slate-800 py-16 text-white relative overflow-hidden">
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-50 -z-10"></div>
-      
+
       {/* Blurred circles for decoration */}
       <div className="absolute right-0 bottom-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -z-10"></div>
       <div className="absolute left-20 top-20 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl -z-10"></div>
-      
+
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-16">
           <div className="md:col-span-4">
@@ -85,7 +85,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="tech-card p-6 mb-12">
           <p className="text-slate-400 text-sm">
             <strong className="text-white">Our Investment Philosophy:</strong> We believe in transparency and honesty. Investing inherently involves risk, and no one can truly predict market movements. Unlike traditional approaches that claim to "beat the market," we focus on education, long-term thinking, and building a community that understands that past performance doesn't guarantee future results. We don't make false promises - instead, we provide the tools and knowledge to help you make informed decisions in an uncertain financial world.
