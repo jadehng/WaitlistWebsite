@@ -29,8 +29,8 @@ const Hero = () => {
               Our Vision
             </div>
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-              Fair finance <br/>
-              <span className="gradient-text">for all</span>
+              Fair Finance <br/>
+              <span className="gradient-text">for All</span>
             </h1>
             <p className="text-lg text-slate-400 mb-8 max-w-lg">
               We believe finance should be honest, transparent, and accessible to all. The current system isn't working for most people - it's complicated, expensive, and often puts profits over people.
